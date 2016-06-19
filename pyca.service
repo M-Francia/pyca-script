@@ -1,0 +1,12 @@
+[Unit]
+Description=pyCA Capture Agent
+After=network.target
+
+[Service]
+Type=simple
+User=pyca
+Group=pyca
+ExecStart=/home/pyca/pyca-script/systemd.sh
+
+[Install]
+WantedBy=multi-user.target
