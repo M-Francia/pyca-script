@@ -7,8 +7,8 @@
 #   Recorder and one audio input.
 #
 #   @author   Jan Koppe <jan.koppe@wwu.de>
-#   @date     2016-06-08
-#   @version  0.4.0
+#   @date     2016-07-03
+#   @version  0.5.0
 ######
 
 ######
