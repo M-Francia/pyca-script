@@ -106,8 +106,10 @@ DECKLINK_FORMAT=13
 #
 ffmpeg -loglevel fatal -y -f decklink -t $TIME \
   -i "$DECKLINK_DEVICE@$DECKLINK_FORMAT" \
+  -pix_fmt yuv420p \
   -an \
   -c\:v libx264 \
+  -profile\:v baseline -level 3.1
   -preset slow \
   -tune stillimage \
   "$DIRECTORY/${NAME}_presentation.mp4" \
